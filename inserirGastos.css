@@ -1,0 +1,213 @@
+/* Header Styles */
+header {
+    background-color: #1E2A39; /* Cor de fundo do cabeçalho */
+    padding: 1.5rem 2rem; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para o cabeçalho */
+    width: 100%; /* Garante que o cabeçalho ocupe toda a largura da página */
+    position: relative; /* Necessário para manter o cabeçalho acima de outros elementos */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+}
+
+.navbar .logo {
+    color: white; /* Cor do logo */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.navbar {
+    overflow: hidden; /* Impede que os itens saiam da barra de navegação */
+    background-color: #1E2A39; /* Cor de fundo da barra de navegação */
+}
+
+.navbar a {
+    float: left; /* Coloca os links da navegação à esquerda */
+    font-size: 16px; /* Tamanho da fonte dos links */
+    color: white; /* Cor do texto dos links */
+    text-align: center; /* Alinha o texto no centro */
+    padding: 14px 16px; /* Espaçamento interno dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+.dropdown {
+    float: left; /* Mantém o dropdown à esquerda */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+}
+
+.dropdown .dropbtn {
+    width: 45px; /* Largura do botão do dropdown */
+    height: 45px; /* Altura do botão do dropdown */
+    margin: 8px; /* Margem ao redor do botão */
+    background-color: 1E2A39; /* Cor de fundo do botão */
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: 1E2A39; /* Cor de fundo ao passar o mouse sobre os links */
+}
+
+.dropdown-content {
+    display: none; /* Inicialmente o dropdown não é exibido */
+    position: absolute; /* O conteúdo do dropdown é posicionado absolutamente */
+    background-color: #f9f9f9; /* Cor de fundo do conteúdo do dropdown */
+    min-width: 160px; /* Largura mínima do conteúdo */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Sombra suave para o conteúdo */
+    z-index: 1; /* Garante que o dropdown fique acima de outros elementos */
+}
+
+.dropdown-content a {
+    float: none; /* Remove o flutuamento dos itens do dropdown */
+    color: black; /* Cor do texto dos itens do dropdown */
+    padding: 12px 16px; /* Espaçamento interno dos itens */
+    text-decoration: none; /* Remove o sublinhado dos itens */
+    display: block; /* Exibe os itens como blocos */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Cor de fundo ao passar o mouse sobre os itens */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Exibe o conteúdo do dropdown ao passar o mouse sobre o dropdown */
+}
+/* RESET DE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* CONTAINER PRINCIPAL */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* FORMULARIO */
+.form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.form-container h2 {
+    font-size: 1.8rem;
+    color: #1e2a34;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #1e2a34;
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #3a8c8c;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a8c8c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2b6b6b;
+}
+
+/* DICA CONTAINER */
+.tip-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 48%;
+    margin-bottom: 30px;
+}
+
+.tip-container h2 {
+    font-size: 1.6rem;
+    color: #1e2a34;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tip-container p {
+    color: #666;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.tip-container .tip-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.tip-container .btn {
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3a8c8c;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tip-container .btn:hover {
+    background-color: #3a8c8c;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container, .tip-container {
+        width: 90%;
+    }
+}

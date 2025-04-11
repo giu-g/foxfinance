@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fox Finance | Cadastro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="cadastro-container">
+    <img src="./img/logocadastro.png" alt="Fox Finance Logo" class="cadastro-logo"/>
+    <h1 class="cadastro-title">FOX FINANCE</h1>
+    <h4 class="cadastro-subtitle">CRIE SEU CADASTRO</h4>
+    <form id="cadastro-form">
+      <label for="cadastro-nome">Nome:</label>
+      <input type="text" id="cadastro-nome" required/>
+
+      <label for="cadastro-email">E-mail:</label>
+      <input type="email" id="cadastro-email" required/>
+
+      <label for="cadastro-senha">Senha:</label>
+      <input type="password" id="cadastro-senha" required/>
+
+      <label for="cadastro-objetivo">Objetivo:</label>
+      <select id="cadastro-objetivo" class="cadastro-input">
+        <option value="Poupar">Poupar</option>
+        <option value="Organizar">Organizar</option>
+        <option value="Quitar">Quitar</option>
+      </select>
+
+      <button type="submit" id="cadastro-enviar">Enviar</button>
+    </form>
+  </div>
+
+  <footer class="cadastro-footer">
+    <p>&copy; 2024 Fox Finance</p>
+  </footer>
+</body>
+</html>
