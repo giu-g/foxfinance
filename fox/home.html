@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard do Usuário</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Cabeçalho (header) -->
+    <header>
+        <div class="navbar">
+            <a href="home.html" class="logo" aria-label="Logo">Fox Finance</a>
+
+            <!-- Menu de navegação com dropdown (menu suspenso) -->
+            <div class="navbar">
+                <div class="dropdown">
+                    <!-- Imagem do ícone de menu com a classe dropbtn, que serve de botão para o menu suspenso -->
+                    <img src="./img/menu.png" alt="Menu" width="30px" class="dropbtn">
+                    <i class="fa fa-caret-down"></i> <!-- Ícone de seta para baixo para indicar dropdown -->
+
+                    <!-- Conteúdo do menu suspenso (dropdown) -->
+                    <div class="dropdown-content">
+                        <!-- Links dentro do dropdown -->
+                        <a href="home.html">Home</a>
+                        <a href="gerenciarConta.html">Sua Conta</a>
+                        <a href="receita.html">Inserir Entradas</a>
+                        <a href="inserirGastos.html">Inserir Saídas</a>
+                        <a href="relatorioGastos.html">Relatório de Gastos</a>
+                        <a href="recuperarDados.html">Recuperar Dados</a>
+                        <a href="suporte.html">Suporte</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Título principal da página (Dashboard do Usuário) -->
+    <h1>Dashboard do Usuário</h1>
+
+    <!-- Botão para carregar o dashboard do usuário (vai acionar algum script ou ação) -->
+    <button id="botaodash">Carregar Dashboard</button>
+
+    <!-- Container onde o resultado da ação será exibido -->
+    <div id="resultContainer" class="result"></div>
+
+    <!-- Container para os gráficos -->
+    <div class="chart-wrapper">
+        <!-- Primeiro gráfico -->
+        <div class="chart-container">
+            <canvas id="gastosChart"></canvas>
+        </div>
+        <!-- Segundo gráfico -->
+        <div class="chart-container">
+            <canvas id="barChart"></canvas>
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Fox Finance - Todos os direitos reservados |
+                <a class="acontato" href="mailto:contato@foxfinance.com"
+                    aria-label="Enviar e-mail para Fox Finance">contato@foxfinance.com</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

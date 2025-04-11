@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fox Finance | Gerenciar Conta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gerenciarConta.css">
+    <script src="gerenciarConta.js" defer></script>
+    <style>
+        .titulo-centralizado {
+            text-align: center;
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
+        .form-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+     <!-- Cabeçalho (header) com o Menu Hamburger -->
+     <header>
+        <div class="navbar">
+            <a href="home.html" class="logo" aria-label="Logo">Fox Finance</a>
+
+            <!-- Menu de navegação com dropdown (menu suspenso) -->
+            <div class="navbar">
+                <div class="dropdown">
+                    <!-- Imagem do ícone de menu com a classe dropbtn, que serve de botão para o menu suspenso -->
+                    <img src="./img/menu.png" alt="Menu" width="30px" class="dropbtn">
+                    <i class="fa fa-caret-down"></i> <!-- Ícone de seta para baixo para indicar dropdown -->
+
+                    <!-- Conteúdo do menu suspenso (dropdown) -->
+                    <div class="dropdown-content">
+                        <!-- Links dentro do dropdown -->
+                        <a href="home.html">Home</a>
+                        <a href="gerenciarConta.html">Gerenciamento</a>
+                        <a href="receita.html">Receita</a>
+                        <a href="recuperarDados.html">Recuperar dados</a>
+                        <a href="relatorioGastos.html">Relatório de gastos</a>
+                        <a href="suporte.html">Suporte</a>
+                        <a href="inserirGastos.html">Inserir gastos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Formulário para buscar ID -->
+        <div class="form-container" id="formBuscarId">
+            <h2>Informe seu ID para editar seus dados</h2>
+            <form id="buscarIdForm">
+                <div class="form-group">
+                    <label for="idUsuario">ID de usuário:</label>
+                    <input id="idUsuario" class="input" placeholder="Digite seu ID" required>
+                </div>
+                <button type="submit" class="btn">Buscar Dados</button>
+            </form>
+        </div>
+
+        <!-- Formulário para editar dados do usuário -->
+        <div class="form-container" id="formEditarUsuario" style="display:none;">
+            <h2>Atualize seus dados</h2>
+            <form id="editarUsuarioForm">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input id="nome" class="input" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input id="email" class="input" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input id="senha" class="input" placeholder="Digite sua senha" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="objetivo">Objetivo</label>
+                    <select id="objetivo" class="input" required>
+                        <option value="Poupar">Poupar</option>
+                        <option value="Investir">Investir</option>
+                        <option value="Organizar">Organizar</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Confirmar</button>
+                <!-- Botão de deletar -->
+                <button type="button" id="deletarUsuario" class="btn" ">Deletar</button>
+
+            </form>
+        </div>
+
+        <!-- Dica para o usuário -->
+        <div class="tip-container">
+            <h2>É importante manter seus dados atualizados!</h2>
+            <p>Com informações corretas, podemos oferecer recomendações personalizadas, ajudando você a tomar decisões
+                mais assertivas. Além disso, dados atualizados facilitam o acompanhamento do seu progresso.</p>
+            <img src="img/propaganda.png" alt="Promoção" class="tip-image">
+        </div>
+    </div>
+</body>
+
+</html>

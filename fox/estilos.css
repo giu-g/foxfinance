@@ -1,0 +1,144 @@
+/* Estilos globais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1e2a34;
+    color: #333;
+    line-height: 1.0;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh; /* Garantir que o conteúdo ocupe toda a tela */
+}
+
+/* Títulos principais */
+h1, h4 {
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px; /* Menor espaçamento entre título e subtítulo */
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+img {
+    max-width: 100px; /* Logo menor */
+    display: block;
+    margin: 20px auto;
+}
+
+/* Formulário */
+.mula {
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para o formulário */
+    width: 100%; /* Certificando-se que a div pode se expandir */
+    margin: 50px auto;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #1e2a34;
+    background-color: #eaf4ff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #28666e;
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #6a8396;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .mula {
+        padding: 20px;
+        max-width: 50%; /* Formulário ocupa mais largura em dispositivos móveis */
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    img {
+        max-width: 80px; /* Logo menor em telas pequenas */
+    }
+}
+
+/* Rodapé */
+footer {
+    background-color: #a6a6a8;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-top: auto; /* Faz o rodapé ficar na parte inferior */
+    width: 100%;
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 800px) {
+    .mula {
+        max-width: 400px; /* Aumentado o tamanho da div para 600px em telas maiores */
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+}
